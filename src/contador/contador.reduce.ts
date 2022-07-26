@@ -1,6 +1,6 @@
-import { Action } from "./redux.action";
+import { Action } from "../redux/redux.action";
 
-export function reducer(state: number = 10, action: Action): number {
+export function contadorReducer(state: number = 10, action: Action): number {
   switch (action.type) {
     case "INCREMENTAR":
       return state + 1;
